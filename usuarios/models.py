@@ -6,7 +6,6 @@ class Usuario(models.Model):
     email = models.CharField(max_length=30, null=False, blank=False)
     cpf = models.CharField(max_length=11, null=False, blank=False)
     data_nascimento = models.CharField(max_length=10, null=False, blank=False)
-     
     
 
 
