@@ -7,6 +7,10 @@
     <body>
 
         <form action="{% url 'cadastro' %}" method="POST">{% csrf_token %}
+            <input type="text" placeholder="First Name..." name="first_name">
+            <br>
+            <input type="text" placeholder="Last name..." name="last_name">
+            <br>
             <input type="text" placeholder="Username..." name="username">
             <br>
             <input type="email" placeholder="Email..." name="email">
@@ -17,7 +21,5 @@
         </form>
 
     </body>
-
-
 
 </html>
