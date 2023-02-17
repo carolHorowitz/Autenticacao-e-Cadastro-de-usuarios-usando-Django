@@ -1,4 +1,82 @@
-<h1>Bem-Vindo(a)</h1>
-<p><a href="http://127.0.0.1:8000/usuarios/cadastro/">Clique aqui</a> para ser redirecionado a página de <b>cadastro</b> de usuário, 
-    <br/> ou <a href="http://127.0.0.1:8000/usuarios/login/">clique aqui</a> 
-    para realizar seu login </p>
+<html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+    * {
+        background-color: #3b3b3b;
+        font-family: 'Inter';
+    }
+
+    input {
+        border-radius: 15px;
+        margin-bottom: 13px;
+        color: white;
+        height: 50px;
+        width: 200px;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    input:hover {
+        border: 1px solid white;
+        transition: 0.2s all ease;
+        width: 215px;
+    }
+
+    input text {
+        color: white;
+    }
+
+    .login_bkg {
+        top: 100px;
+        margin: auto;
+        height: 380px;
+        width: 250px;
+        position: relative;
+        border: 3px solid black;
+        background-color: #262626;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        box-shadow: 5px 5px 10px 1px black;
+    }
+
+    ::placeholder {
+        color: grey;
+        text-align: center;
+    }
+
+    p {
+        background-color: transparent;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+
+    h6 {
+        background-color: transparent;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<head></head>
+
+<body>
+
+    <div class="login_bkg">
+        <p>WELCOME</p>
+        <h6>Already have an account?</h6>
+        <input type="submit" value="Log into your account" onclick="location.href='http://127.0.0.1:8000/usuarios/login/';">
+        <br>
+        <h6>Don't have an account?</h6>
+        <input type="submit" value="Create your account" onclick="location.href='http://127.0.0.1:8000/usuarios/cadastro/';">
+        <br>
+    </div>
+
+    
+</body>
+
+
+</html>
